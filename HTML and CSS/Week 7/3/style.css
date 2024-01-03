@@ -1,0 +1,100 @@
+ /*Question-3 style starts*/
+ .section-03 {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #2b1e16;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sub-section {
+    margin: 10px 50px;
+    text-align: center;
+}
+
+.sub-section img {
+    width: 150px;
+}
+
+.sub-section h1 {
+    color: #fff;
+}
+
+.sub-section p {
+    color: #8e6e54;
+}
+
+.sub-section-03-heading {
+    margin-top: 60px;
+}
+/*Question-3 style ends*/
+
+/*Question-2 style starts*/
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial;
+}
+
+nav img{
+    width: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding-right: 50px;
+}
+nav a:hover {
+    color: #00ee7f;
+    font-weight: bold;;
+}
+nav button {
+    margin-left: 60%;
+    padding: 10px 0px;
+    border: 0;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #0fdb6b;
+}
+/*Question-2 style ends */
+
+/*Question-1 style starts*/
+.main-container{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    gap: 20px;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.textArea{
+    padding: 0px 50px;
+}
+.textArea h1 {
+    font-size: 40px;
+}
+.textArea button {
+    background-color: black;
+    border: 0;
+    color: white;
+    padding: 10px 50px;
+    margin-top: 30px;
+    font-size: large;
+}
+.imageArea{
+    background-color: yellow;
+    height: 100%;
+    max-height: 90vh;
+}
+.imageArea img {
+    width: 70%;
+    height: 100%;
+
+}

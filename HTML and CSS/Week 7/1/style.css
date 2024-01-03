@@ -1,0 +1,43 @@
+.container {   /*grid isliye kyoki apn ne do container section bnaay hai
+    aur flex me hee apn container me entities rakhte the */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*taaki space baraabar rahe  dono section me*/
+    margin: auto;  /*isse automatric barrabar(left=right, up=down) margin set ho gai*/
+    border: 2px solid black;
+    max-width: 1200px;
+    gap: 20px; /*dono section ke beech ka gap*/
+    align-items: center;  /*iske liye item wo dono section hai, section-1 vertically up down hoga
+    aur section-2 phele hee full jaagh gehr rha tha to wo waisa hee rahega*/
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+
+}
+
+.text-section {
+    padding: 0px 50px;  /*ye padding dekr text pura section-1 me ek tareeke se center me hee aa gya*/ 
+}
+h1 {
+    font-size: 40px;
+   
+}
+p {
+ color: #4c665d;
+}
+button {
+    background-color: black;
+    color: aliceblue;
+    padding: 10px 50px;
+    font-size: large;
+    border: 0px;
+    margin-top: 30px;
+}
+
+img {
+width: 70%;
+height: 100%;
+
+}
+.image-section {
+background-color: yellow;
+height: 100%;
+}
