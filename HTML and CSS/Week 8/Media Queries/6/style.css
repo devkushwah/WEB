@@ -1,0 +1,102 @@
+body {  /*apn ne koi footer nhi balki body hee banaya hai poore size ke sth*/
+    margin: 0; /*margin, padding = 0 dekr ye body full screen legi*/
+    padding: 0;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100vh; /*aur ye apn uss body ki height dedi*/
+    align-items: flex-end; /*ye krne se container last me chla jaayga aur footer ka kaam krega*/
+}
+
+footer {  /*uss body ko apn footer naam de dia*/
+    background-color: #121315;
+    color: #a7a7a7;
+    font-size: 16px;
+    padding: 50px 0px;
+}
+
+footer * {
+    box-sizing: border-box;  /*ye bht kaam ki property hai..isse sab babar box ban gya*/
+    border: none;
+    outline: none;
+}
+
+.row {
+padding: 1em 1em;
+}
+.row.primary {
+display: grid;
+grid-template-columns: 2fr 1fr 1fr 2fr;  /*isne decide kara ki har column me kitni row aayngi*/
+align-items: stretch;  /*taaki screen chhota hone par column wgera sab sahi stretch kare*/
+}
+.column {
+width: 100%;
+display: flex;
+flex-direction: column;
+padding: 0 40px;  /*left, right padding isliye chhota hone par dikkat na aay*/
+min-height: 55px;  /*useless*/
+}
+h3 {
+width: 100%;
+text-align: left;
+color: white;
+font-size: 1.4em;
+white-space: nowrap;   /*useless*/
+}
+ul {
+list-style: none;
+display: flex;
+flex-direction: column;
+padding: 0;
+margin: 0;
+}
+li:not(:first-child) {
+margin-top: 30px;
+}
+ul li a {
+color: #a7a7a7;
+text-decoration: none;
+}
+ul li a:hover {
+color: #2a8ded;
+}
+.about p {
+text-align: justify;
+line-height: 2;
+margin: 0;
+}
+input,
+button {
+font-size: 14px;
+padding: 18px;
+width: 100%;
+border-radius: 5px;
+margin-bottom: 5px;
+}
+button {
+background-color: #1893f7;
+color: #ffffff;
+}
+
+.copyright {
+padding: 10px 20px;
+background-color: #25262e;
+}
+.footer-menu {
+float: left;
+margin-top: 10px;
+}
+
+.footer-menu a {
+color: #cfd2d6;
+padding: 6px;
+
+text-decoration: none;
+}
+.footer-menu a:hover {
+color: #27bcda;
+}
+@media screen and (max-width: 850px) {
+.row.primary {
+  grid-template-columns: 1fr;
+}
+}

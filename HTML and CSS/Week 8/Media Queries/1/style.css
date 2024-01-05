@@ -1,0 +1,79 @@
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+    color: #fff;   
+     }    /* ye kuch symbols laane ke liye */
+    
+
+     body {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;  
+     }
+
+  nav {
+    height: 50px; 
+    padding: 5px;  /*dhko left, right me to space hai but upr, neeche nhi but isse upr, neeche bhi ho jaayga mtlb chaaro aur*/
+    display: flex;  
+    align-items: center; /*vertically*/
+    background-color:  #242b2e;
+  }
+    
+     
+  .large-screen {  /*ye properties large screen ke liye hai sirf*/
+    max-width: 1200px;  /*universal*/
+    width: 100%;  /*universal*/
+    margin: auto; /*taaki kahi par space kam jada ho to wo sahi ho jaay*/
+    justify-content: space-between;  /*horizontally barabar space*/
+    display: none; /*isse cheeze gayab ho jaati hai pr mujhr nhi pta ise kyu likhA 
+    pr mujhr lgta hai jab screen chhti tb ye gyb ho jaay*/
+  }
+  .small-screen {
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap; /*taaki wo wrap hoke chhota ho jaay*/
+  }
+  .large-screen > img {
+    width: 50px;  /*large scr me img=50px bnegi*/
+  }
+
+  .small-screen > img {
+    width: 30px;  /*small scr me img=30px bnegi*/
+  }
+
+  
+  .nav-links {    
+    display: flex;
+    align-items: center;  /*taaki saari links vertically center me aa jaay*/
+  }
+  
+  .nav-links a {    
+    text-decoration: none;
+    color: #fff;
+    margin-right: 25px;   /*links me koi gap nhi hai isliye margin se hee gap dena hoga*/
+  }
+
+  .nav-links a:hover {
+    color: #76b5d3;
+    scale: 1.1;  /*ye isliye taaki ekdum hover krte time link ka size bada sikhne lge*/
+    cursor: pointer;
+  }
+
+  button {
+    padding: 0px 40px;
+    margin: 10px 0px;
+    background-color: #0072e1;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    font-weight: bold;
+  }
+
+  @media screen and (min-width: 800px) {  /*min-width: 800px kyoki small scr ke liye hai ye agar scr 800px hua to small screen ki properties  lag jaay*/
+        .large-screen{
+            display: flex;  /*agar width>800px hua to flex mtlb bdi screen*/
+        }
+        .small-screen{
+            display: none;  /*agar widh<800px hua to "none mtlb for chhoti screen*/
+        }
+     }
